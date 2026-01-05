@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iniciar sesión | FitTraining</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen bg-gray-50 flex items-center justify-center">
+
+  <main class="bg-white border border-gray-200 rounded-2xl shadow-sm w-full max-w-md p-8">
+
+    <!-- Logo / Título -->
+    <div class="text-center mb-8">
+      <h1 class="text-2xl font-bold text-red-500 mb-2">FitTraining</h1>
+      <p class="text-sm text-gray-500">
+        Inicia sesión para continuar tu entrenamiento
+      </p>
+    </div>
+
+    <!-- Formulario -->
+    <form class="space-y-6">
+
+      <!-- Email -->
+      <div>
+        <label class="block text-sm font-medium mb-1">
+          Correo electrónico
+        </label>
+        <input
+          type="email"
+          placeholder="ejemplo@email.com"
+          class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-red-400"
+        />
+      </div>
+
+      <!-- Contraseña -->
+      <div>
+        <label class="block text-sm font-medium mb-1">
+          Contraseña
+        </label>
+        <input
+          type="password"
+          placeholder="••••••••"
+          class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-red-400"
+        />
+      </div>
+
+      <!-- Opciones -->
+      <div class="flex items-center justify-between text-sm">
+        <label class="flex items-center gap-2">
+          <input type="checkbox" class="accent-red-500">
+          Recordarme
+        </label>
+        <a href="#" class="text-red-500 hover:underline">
+          ¿Olvidaste tu contraseña?
+        </a>
+      </div>
+
+      <!-- Botón -->
+      <button
+        type="submit"
+        class="w-full py-3 bg-red-500 text-white rounded-xl font-semibold hover:bg-red-600 transition"
+      >
+        Iniciar sesión
+      </button>
+
+    </form>
+
+    <!-- Registro -->
+    <p class="text-center text-sm text-gray-500 mt-8">
+      ¿No tienes cuenta?
+      <a href="#" class="text-red-500 font-medium hover:underline">
+        Regístrate
+      </a>
+    </p>
+
+  </main>
+
+</body>
+</html>
